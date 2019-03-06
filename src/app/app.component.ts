@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ang-proyecto';
+  title:string = 'Proyecto Angular';
+
+  empleados = [
+    {'name': 'Juan', position: 'Encargado'},
+    {'name': 'Carlos', position: 'Diseñador'},
+    {'name': 'Alberto', position: 'Desarrollador'}
+  ];
+
+  addEmpleado():void{
+
+  }
+
+  deleteEmpleado():void{
+
+  }
+
+  editEmpleado():void{
+
+  }
+
+  updateEmpleado():void{
+    
+  }
 }
