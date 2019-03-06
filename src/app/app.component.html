@@ -55,7 +55,7 @@
       </div>
   </div>
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       <h2>Datos Registrados</h2>
       <table class="table table-bordered">
         <thead>
@@ -82,6 +82,42 @@
             </tr>
         </tbody>
       </table>
+    </div>
+    <div class="col-sm-5"> 
+        <h2 class="text-center">Actualización de Datos</h2>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="name" class="control-label col-sm-2">
+                Nombre: 
+            </label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="name" name="name" [(ngModel)]="model_up.name" placeholder="Agregue un nuevo nombre">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="position" class="control-label col-sm-2">
+                Cargo: 
+            </label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="position" name="position" [(ngModel)]="model_up.position" placeholder="Ingrese un cargo">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="control-label col-sm-2">
+                Email: 
+            </label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" name="email" [(ngModel)]="model_up.email" placeholder="Ingrese un correo electrónico">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+              <button type="submit" class="btn btn-primary" (click)="updateEmpleado()">
+                Guardar
+              </button>
+            </div>
+          </div>
+        </form>
     </div>
   </div>
 </div>

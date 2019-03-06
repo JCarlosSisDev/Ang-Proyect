@@ -15,6 +15,7 @@ export class AppComponent {
   ];
 
   model:any = {};
+  model_up:any = {};
 
   addEmpleado():void{
     this.empleados.push(this.model);
@@ -24,11 +25,15 @@ export class AppComponent {
 
   }
 
-  editEmpleado():void{
-
+  myValue;
+  editEmpleado(i):void{
+    this.model_up.name = this.empleados[i].name;
+    this.model_up.position = this.empleados[i].position;
+    this.model_up.email = this.empleados[i].email;
+    this.myValue = i;
   }
 
   updateEmpleado():void{
-
+    console.log(this.model_up);
   }
 }
