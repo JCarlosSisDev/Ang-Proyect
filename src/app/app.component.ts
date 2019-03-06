@@ -17,7 +17,7 @@ export class AppComponent {
   model:any = {};
 
   addEmpleado():void{
-
+    this.empleados.push(this.model);
   }
 
   deleteEmpleado():void{
