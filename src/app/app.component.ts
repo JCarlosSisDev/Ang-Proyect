@@ -34,6 +34,13 @@ export class AppComponent {
   }
 
   updateEmpleado():void{
-    console.log(this.model_up);
+    //console.log(this.model_up);
+    let i = this.myValue;
+    for(let j = 0; j < this.empleados.length; j++){
+      if(i == j){
+        this.empleados[i] = this.model_up;
+        this.model_up = {};
+      }
+    }
   }
 }
