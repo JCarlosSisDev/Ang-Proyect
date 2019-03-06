@@ -14,6 +14,8 @@ export class AppComponent {
     {'name': 'Alberto', position: 'Desarrollador'}
   ];
 
+  model:any = {};
+
   addEmpleado():void{
 
   }
@@ -27,6 +29,6 @@ export class AppComponent {
   }
 
   updateEmpleado():void{
-    
+
   }
 }
