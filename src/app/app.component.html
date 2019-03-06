@@ -59,22 +59,24 @@
       <h2>Datos Registrados</h2>
       <table class="table table-bordered">
         <thead>
-          <tr>
+          <tr class="text-center">
             <th>Nombre</th>
             <th>Cargo</th>
             <th>Email</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
             <tr *ngFor="let empleado of empleados; let i = index">
               <td>{{empleado.name}}</td>
               <td>{{empleado.position}}</td>
-              <td>
-                <a href="#">
-                  Acción1
+              <td>{{empleado.email}}</td>
+              <td style="color:white;" class="text-center">
+                <a (click)="editEmpleado(i)" class="btn btn-primary">
+                  Editar
                 </a>
-                <a href="#">
-                  Acción2
+                <a (click)="deleteEmpleado(i)" class="btn btn-danger">
+                  Eliminar
                 </a>
               </td>
             </tr>

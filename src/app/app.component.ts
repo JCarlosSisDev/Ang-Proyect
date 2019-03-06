@@ -9,9 +9,9 @@ export class AppComponent {
   title:string = 'Proyecto Angular';
 
   empleados = [
-    {'name': 'Juan', position: 'Encargado'},
-    {'name': 'Carlos', position: 'Diseñador'},
-    {'name': 'Alberto', position: 'Desarrollador'}
+    {'name': 'Juan', position: 'Encargado', email: 'email_1@test.com'},
+    {'name': 'Carlos', position: 'Diseñador', email: 'email_2@test.com'},
+    {'name': 'Alberto', position: 'Desarrollador', email: 'email_3@test.com'}
   ];
 
   model:any = {};
